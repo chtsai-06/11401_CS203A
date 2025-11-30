@@ -5,8 +5,7 @@
 #include <algorithm>
 #include <ctime>
 
-// 包含 hash_fn.cpp 的介面（在實際專案中應將介面移到 hash_fn.h）
-// 這裡假設編譯器可以處理模板的定義
+
 template<typename K>
 class MultiplicativeHasher {
 public:
@@ -25,14 +24,13 @@ void run_cpp_test() {
     std::cout << "表大小: " << TABLE_SIZE_CPP << ", 測試鍵數: " << NUM_KEYS_CPP << std::endl;
     std::cout << "====================================================\n";
 
-    // 1. 測試連續的鍵值 (常規雜湊函數容易失敗的測試)
     std::cout << "\n--- 1. 測試連續鍵值分佈 (1 到 20000) ---\n";
     for (int i = 1; i <= NUM_KEYS_CPP; i++) {
         size_t index = hasher(i, TABLE_SIZE_CPP);
         distribution[index]++;
     }
 
-    // 輸出部分結果
+
     std::cout << "部分桶子 (Bucket) 命中次數:\n";
     for (size_t i = 0; i < 10; i++) {
         std::cout << "Bucket [" << i << "]: " << distribution[i] << std::endl;

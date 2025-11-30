@@ -1,13 +1,12 @@
-// hash_fn.cpp
+
 #include <cstdint>
 #include <stddef.h>
 #include <cmath>
 
-// 乘法雜湊常數
-constexpr uint32_t HASH_MULTIPLIER = 0x9e3779b9UL;
+
 constexpr int WORD_SIZE = 32;
 
-// 類別定義與實作
+
 template<typename K>
 class MultiplicativeHasher {
 public:
@@ -36,6 +35,5 @@ public:
     }
 };
 
-// 顯式實例化常用類型，以便編譯器知道要為這些類型生成程式碼
 template class MultiplicativeHasher<int>;
 template class MultiplicativeHasher<uint32_t>;
