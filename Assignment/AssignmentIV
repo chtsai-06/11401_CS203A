@@ -1,2 +1,9 @@
 cd Assignment
 mkdir AssignmentIV
+
+cp /tmp/11401_CS203A/Assignment/AssignmentIV/README_template.md README.md
+cp /tmp/11401_CS203A/Assignment/AssignmentIV/Makefile .
+cp /tmp/11401_CS203A/Assignment/AssignmentIV/Makefile.bat .
+cp /tmp/11401_CS203A/Assignment/AssignmentIV/VSCode.md .
+rsync -av /tmp/11401_CS203A/Assignment/AssignmentIV/C .
+rsync -av /tmp/11401_CS203A/Assignment/AssignmentIV/CXX .
