@@ -110,7 +110,7 @@ ADT vs. DT
 | build | O(n) |
 | heapsort (extract) | O(n logn) |
 
-_其餘都是 O(logn)_
+- _其餘都是 O(logn)_
 ---
 ## Graph
 - Edges can have label (ex: z1) and weight (ex: 8)
