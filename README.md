@@ -56,7 +56,7 @@ ADT vs. DT
 - Load factor(α): 檢查 table 空間使用率 *靜態有差異*
 - Collision: different keys but come into same index
 
-| Solution | Explanation |
+| Collision Solution | Explanation |
 | :--- | :--- |
 | Chainning | Linked List ex: [3]->15->23->27 ( old -> new ) |
 | Linear Probing | linear |
