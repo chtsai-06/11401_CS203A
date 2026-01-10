@@ -59,6 +59,6 @@ ADT vs. DT
 | Solution | Explanation |
 | :--- | :--- |
 | Chainning | Linked List ex: [3]->15->23->27 ( old -> new ) |
-| Probing | linear |
-| Probing | quadratic |
-| Probing | double |
+| Linear Probing | linear |
+| Quadratic Probing | quadratic |
+| Double Probing | double |
